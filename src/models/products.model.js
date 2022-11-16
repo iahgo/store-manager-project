@@ -19,8 +19,6 @@ const insertProduct = async (produto) => {
     'INSERT INTO StoreManager.products (name) VALUES (?)',
     [produto.name],
   );
-  console.log('----------------------aaa');
-  console.log(product);
   return product;
 };
 
