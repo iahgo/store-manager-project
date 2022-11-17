@@ -9,6 +9,7 @@ const route = express.Router();
 route.get('/products', productsController.findAllProducts);
 route.get('/products/:id', productsController.findProductById);
 route.post('/products', validateName, productsController.insertProduct);
+route.put('/products/:id', validateName, productsController.updateProduct);
 
 route.get('/sales', salesController.findAllSales);
 route.get('/sales/:id', salesController.findSaleById);
