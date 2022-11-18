@@ -1,5 +1,4 @@
 const camelize = require('camelize');
-// const snakeize = require('snakeize');
 
 const connection = require('./connection');
 
@@ -24,16 +23,7 @@ const findSaleById = async (id) => {
   return camelize(sales);
 };
 
-const insertSale = async () => {
-  const [product] = await connection.execute(
-    'INSERT INTO StoreManager.sales (date) VALUES (default)',
-    [],
-  );
-  return product;
-};
-
 module.exports = {
   findAllSales,
   findSaleById,
-  insertSale,
 };

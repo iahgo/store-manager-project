@@ -9,13 +9,11 @@ const findAllProducts = async () => {
 
 const findProductsById = async (id) => {
   const product = await productsModel.findProductsById(id);
-
   if (!product) {
     return {
       type: 'PRODUCT_NOT_FOUND', message: 'Product not found',
     };
   }
-
   return { type: null, message: product };
 };
 
@@ -33,9 +31,7 @@ const updateProduct = async (id, product) => {
   await productsModel.updateProduct(id, product);
 
   const getUpdatedProduct = await productsModel.findProductsById(id);
-  console.log('----------------');
-  console.log(getUpdatedProduct);
-  console.log('----------------');
+
   return { type: null, message: getUpdatedProduct };
 };
 

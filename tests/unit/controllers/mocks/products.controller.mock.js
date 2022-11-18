@@ -12,10 +12,13 @@ const products = [
     name: 'Escudo do Capitão América',
   },
 ];
+
+
 const allProductsReturn = { type: null, message: products };
 
 const productReturn = { type: null, message: products[0] };
 
 module.exports = {
   allProductsReturn, 
+  products,
 }

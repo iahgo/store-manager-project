@@ -22,6 +22,6 @@ describe('Teste de unidade service de produtos',async function () {
   // it('Recuperando um produto a partir do seu id sem sucesso', async function () {
   //   sinon.stub(productsModel, 'findProductsById').resolves([]);
   //   const result = await productsService.findProductsById(1);
-  //   expect(result.type).to.be.deep.equal('PRODUCT_NOT_FOUND');
+  //   expect(result.message).to.be.deep.equal('Product not found');
   // })
 });

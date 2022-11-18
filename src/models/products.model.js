@@ -23,8 +23,6 @@ const insertProduct = async (produto) => {
 };
 
 const updateProduct = async (id, { name }) => {
-  console.log(name);
-  console.log(id);
   const product = connection.execute(
     'UPDATE StoreManager.products SET name = ? WHERE id = ?',
     [name, id],

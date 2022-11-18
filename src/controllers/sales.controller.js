@@ -15,13 +15,7 @@ const findSaleById = async (req, res) => {
   res.status(200).json((message));
 };
 
-const insertSale = async (req, res) => {
-  const { message } = await salesService.insertSale(req.body);
-  res.status(201).json(message);
-};
-
 module.exports = {
   findAllSales,
   findSaleById,
-  insertSale,
 };

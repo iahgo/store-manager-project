@@ -14,6 +14,5 @@ route.delete('/products/:id', productsController.deleteProduct);
 
 route.get('/sales', salesController.findAllSales);
 route.get('/sales/:id', salesController.findSaleById);
-route.post('/sales', salesController.insertSale);
 
 module.exports = route;
