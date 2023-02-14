@@ -15,7 +15,7 @@ Este projeto é uma implementação de uma API RESTful usando a arquitetura MSC 
 ### Clone este repositório
 
 ```bash
-git clone https://github.com/pedroayresb/StoreManagerAPI
+git clone https://github.com/iahgo/store-manager-project
 ```
 
 ### Navegue até a pasta do projeto
